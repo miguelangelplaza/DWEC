@@ -1,0 +1,125 @@
+/* General */
+body {
+  background-color: #0f0f0f; /* Color de fondo oscuro */
+  color: #f0f0f0; /* Color de texto claro */
+  font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center; /* Centrar verticalmente la imagen y el texto */
+  justify-content: flex-start; /*Alinear la imagen a la izquierda*/
+  position: center;
+  background-color: rgba(0, 255, 255, 0.1); /*Fondo cian translúcido */
+  color: #00ffcc; /* Texto cian brillante */
+  padding: 20px;
+  text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2); /* Sombra futurista */
+  font-weight: bold;
+}
+
+.header img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 115px; /* Ajustar el tamaño de la imagen si es necesario */
+  height: 125px; /* Ajustar el tamaño de la imagen si es necesario */
+}
+
+.header .text-container {
+  display: flex;
+  flex-direction: column; /* Colocar el texto en columnas */
+  justify-content: center; /* Centrar verticalmente el texto */
+  text-align: center; /* Centrar el texto horizontalmente */
+}
+
+.header h3, .header h4, .header h5 {
+  margin: 0;}  /* Eliminar márgenes para evitar desalineación */
+ 
+
+/* Estilo del menú */
+.topnav {
+  display: flex;
+  justify-content: center;
+  background-color: #111;
+  box-shadow: 0 2px 8px rgba(0, 255, 255, 0.2);
+}
+
+.topnav a {
+  color: #00ffcc;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.topnav a:hover {
+  background-color: #00ffcc;
+  color: #111;
+  border-radius: 5px;
+}
+
+/* Estilo de tarjetas (cards) */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 300px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
+}
+
+.cardTitle {
+  background-color: #00ffcc;
+  color: #111;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.cardBody {
+  padding: 20px;
+  color: #f0f0f0;
+}
+
+.cardFooter {
+  background-color: rgba(0, 255, 255, 0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+.cardFooter a {
+  color: #00ffcc;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.cardFooter a:hover {
+  color: #ff00ff; /* Púrpura brillante */
+}
+
+/* FOOTER */
+.footer {
+  background-color: #111;
+  color: #00ffcc;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -4px 8px rgba(0, 255, 255, 0.2);
+}
