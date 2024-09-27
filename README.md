@@ -8,10 +8,6 @@ Este proyecto es una plantilla para ordenar archivos de manera automática en di
 - Configuración personalizable para definir nuevas reglas de ordenación.
 - Interfaz de usuario simple y fácil de usar.
 
-## Requisitos
-- Node.js
-- npm
-
 ## Instalación
 1. Clona el repositorio:
   ```bash
