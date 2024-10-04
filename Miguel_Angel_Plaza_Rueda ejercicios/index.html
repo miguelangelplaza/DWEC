@@ -9,17 +9,16 @@
   <link href="./css/styles.css" rel="stylesheet" type="text/css">
   <!-- Añadir Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="./js/login.js"></script>
 </head>
 <body>
   <!-- --------HEADER---------- -->
   <div class="header">
     <img src="./img/foto de mi cara.jpeg" width="115" height="125" align="left">
     <div>
-      
       <h3 style="margin-right: 900px;">Ejemplos – FUNDAMENTOS DE JS (ES6)</h3>
-      <h4 >Desarrollo WEB en entorno cliente</h4>
-    </align>
-  </div>
+      <h4>Desarrollo WEB en entorno cliente</h4>
+    </div>
   </div>
 
   <!-- ---------MENU----------- -->
@@ -30,51 +29,43 @@
     <a href="https://github.com/miguelangelplaza/">GitHub</a>
   </div>
 
-  <br />
-  <!-- ------MAIN-CONTENT------ -->
-  <div class="container">
-    <div class="card">
-      <div class="cardTitle">Título ejercicio 01</div>
-      <div class="cardBody">
-        <p>Descripción del ejercicio 01</p>
+  <!-- LOGIN -->
+  <div class="login-form">
+    <h2>Inicio de Sesión</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" required>
+        <p class="username-error" style="display: none; color: blue;">El nombre de usuario debe tener más de 3 caracteres</p>
       </div>
-      <div class="cardFooter"><a href="./ejercicios/ejer01/index.html">>> Solución</a></div>
-    </div>
-
-    <div class="card">
-      <div class="cardTitle">Título ejercicio 02</div>
-      <div class="cardBody">
-        <p>Descripción del ejercicio 02</p>
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
       </div>
-      <div class="cardFooter"><a href="./ejercicios/ejer02/index.html">>> Solución</a></div>
-    </div>
-
-    <div class="card">
-      <div class="cardTitle">...</div>
-      <div class="cardBody">
-        <p>...</p>
-      </div>
-      <div class="cardFooter"><a href="#">>> Solución</a></div>
-    </div>
+      <button type="submit">Iniciar Sesión</button>
+    </form>
   </div>
 
-  <br><br><br>
-  <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<!-- Bienvenida y contenido principal (oculto al principio) -->
+<h1 class="welcome" id="welcomeMessage"></h1> 
+<div id="mainContent" class="container" style="display: none;">
+  <div class="card">
+      <div class="cardTitle">Título ejercicio 01</div>
+      <div class="cardBody">
+          <p>Descripción del ejercicio 01</p>
+      </div>
+      <div class="cardFooter"><a href="./ejercicios/ejer01/index.html">>> Solución</a></div>
+  </div>
+  <div class="card">
+      <div class="cardTitle">Título ejercicio 02</div>
+      <div class="cardBody">
+          <p>Descripción del ejercicio 02</p>
+      </div>
+      <div class="cardFooter"><a href="./ejercicios/ejer02/index.html">>> Solución</a></div>
+  </div>
+</div>
 
-
-  <!-- ---------FOOT----------- -->
+  <!-- ---------FOOTER----------- -->
   <div class="footer">
     © Miguel Ángel Plaza Rueda ☺
   </div>

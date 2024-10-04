@@ -9,36 +9,27 @@ body {
   padding: 0;
 }
 
+/* HEADER */
 .header {
   display: flex;
-  align-items: center; /* Centrar verticalmente la imagen y el texto */
-  justify-content: flex-start; /*Alinear la imagen a la izquierda*/
-  position: center;
-  background-color: rgba(0, 255, 255, 0.1); /*Fondo cian translúcido */
-  color: #00ffcc; /* Texto cian brillante */
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(0, 255, 255, 0.1);
+  color: #00ffcc;
   padding: 20px;
   text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
-  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2); /* Sombra futurista */
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
   font-weight: bold;
 }
 
 .header img {
   border-radius: 50%;
   margin-right: 20px;
-  width: 115px; /* Ajustar el tamaño de la imagen si es necesario */
-  height: 125px; /* Ajustar el tamaño de la imagen si es necesario */
 }
 
-.header .text-container {
-  display: flex;
-  flex-direction: column; /* Colocar el texto en columnas */
-  justify-content: center; /* Centrar verticalmente el texto */
-  text-align: center; /* Centrar el texto horizontalmente */
+.header h3, .header h4 {
+  margin: 0;
 }
-
-.header h3, .header h4, .header h5 {
-  margin: 0;}  /* Eliminar márgenes para evitar desalineación */
- 
 
 /* Estilo del menú */
 .topnav {
@@ -62,35 +53,88 @@ body {
   border-radius: 5px;
 }
 
-/* Estilo de tarjetas (cards) */
+/* Estilo del formulario de login */
+.login-form {
+  width: 300px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #00ffcc;
+}
+
+/* Mensaje de bienvenida y contenido oculto */
+.welcome {
+  display: none;
+  font-size: 24px;
+  color: black;
+}
+
+/* Contenedor del contenido principal, oculto inicialmente */
 .container {
-  display: flex;
+  display: none; /* Se ocultará hasta que inicies sesión */
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
 }
 
+/* Estilo de tarjetas */
 .card {
   background-color: #1e1e1e;
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0, 255, 255, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s;
   width: 300px;
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
 }
 
 .cardTitle {
   background-color: #00ffcc;
   color: #111;
   font-size: 20px;
-  font-weight: bold;
   padding: 10px;
-  text-align: center;
 }
 
 .cardBody {
@@ -98,28 +142,13 @@ body {
   color: #f0f0f0;
 }
 
-.cardFooter {
-  background-color: rgba(0, 255, 255, 0.1);
-  padding: 10px;
-  text-align: center;
-}
-
 .cardFooter a {
   color: #00ffcc;
   font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s;
 }
 
-.cardFooter a:hover {
-  color: #ff00ff; /* Púrpura brillante */
-}
-
-/* FOOTER */
 .footer {
   background-color: #111;
   color: #00ffcc;
   padding: 20px;
-  text-align: center;
-  box-shadow: 0 -4px 8px rgba(0, 255, 255, 0.2);
 }
