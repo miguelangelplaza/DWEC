@@ -8,8 +8,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const mainContent = document.getElementById('mainContent'); // Acceso al contenido principal
 
     // Credenciales predeterminadas
-    const validUsername = 'jota';
-    const validPassword = 'dejame';
+    const validUsername = 'MiguelAngel';
+    const validPassword = '123456';
 
     // Validación de longitud del nombre de usuario
     if (username.length < 3) {

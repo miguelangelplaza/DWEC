@@ -6,3 +6,8 @@ const mostrar = (resultado) => {
     console.log(`Estoy mostrando el resultado del ${name}`);
     resultado.innerHTML = `Estoy mostrando el resultado del ${name2}`;
 };
+
+const volver = (boton2) => {
+    const name = boton2.getAttribute('name');
+    console.log(`voy a volver ${name3}`);
+};
