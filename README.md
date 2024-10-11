@@ -1,44 +1,44 @@
-# Plantilla03a_OrdenarArchivos
+# Login.js
 
 ## Descripción
-Este proyecto es una plantilla para ordenar archivos de manera automática en diferentes carpetas según su tipo o extensión.
+`login.js` es un script que maneja la funcionalidad de inicio de sesión en nuestra aplicación web. Este archivo contiene las funciones necesarias para autenticar a los usuarios y gestionar sus sesiones.
 
-## Características
-- Ordena archivos por tipo (documentos, imágenes, videos, etc.).
-- Configuración personalizable para definir nuevas reglas de ordenación.
-- Interfaz de usuario simple y fácil de usar.
-
-## Instalación
-1. Clona el repositorio:
-  ```bash
-  git clone https://github.com/tu_usuario/Plantilla03a_OrdenarArchivos.git
-  ```
-2. Navega al directorio del proyecto:
-  ```bash
-  cd Plantilla03a_OrdenarArchivos
-  ```
-3. Instala las dependencias:
-  ```bash
-  npm install
-  ```
+## Funcionalidades
+- **Validación de Credenciales:** Verifica que el nombre de usuario y la contraseña ingresados sean correctos.
+- **Gestión de Sesiones:** Crea y mantiene la sesión del usuario una vez autenticado.
+- **Manejo de Errores:** Proporciona retroalimentación al usuario en caso de credenciales incorrectas o errores de conexión.
 
 ## Uso
-1. Ejecuta el script de ordenación:
-  ```bash
-  npm start
+1. **Importar el script:**
+  ```html
+  <script src="path/to/login.js"></script>
   ```
-2. Sigue las instrucciones en pantalla para configurar las reglas de ordenación.
+2. **Llamar a la función de inicio de sesión:**
+  ```javascript
+  login(username, password);
+  ```
 
-## Contribuciones
-Las contribuciones son bienvenidas. Por favor, sigue los siguientes pasos:
-1. Haz un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
-3. Realiza tus cambios y haz commit (`git commit -am 'Añadir nueva característica'`).
-4. Sube tus cambios (`git push origin feature/nueva-caracteristica`).
-5. Abre un Pull Request.
+## Ejemplo
+```javascript
+document.getElementById('loginButton').addEventListener('click', function() {
+   const username = document.getElementById('username').value;
+   const password = document.getElementById('password').value;
+   login(username, password);
+});
+```
 
-## Licencia
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+## Actualizaciones
+- CAMBIOS EN LOGIN.JS
+Cambios principales:
+Persistencia de la sesión: Cuando el usuario inicie sesión con éxito, su nombre de usuario se guarda en una cookie usando setCookie().
+Carga de sesión al recargar la página: Al cargar la página, se verifica si la cookie loggedInUser existe. Si existe, se muestra un mensaje de bienvenida personalizado y se oculta el formulario de inicio de sesión.
+Cierre de sesión: He añadido una función logout() que borra la cookie y devuelve al formulario de login.
 
-## Contacto
-Para cualquier consulta, puedes contactar al autor en [mplarue@g.educaand.es](mailto:[mplarue@g.educaand.es).
+
+
+
+
+
+
+
+
