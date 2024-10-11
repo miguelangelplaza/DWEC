@@ -27,12 +27,18 @@ document.getElementById('loginButton').addEventListener('click', function() {
 });
 ```
 
-## Requisitos
-- Navegador compatible con JavaScript ES6.
-- Conexión a un servidor backend para la autenticación.
+## Actualizaciones
+- CAMBIOS EN LOGIN.JS
+Cambios principales:
+Persistencia de la sesión: Cuando el usuario inicie sesión con éxito, su nombre de usuario se guarda en una cookie usando setCookie().
+Carga de sesión al recargar la página: Al cargar la página, se verifica si la cookie loggedInUser existe. Si existe, se muestra un mensaje de bienvenida personalizado y se oculta el formulario de inicio de sesión.
+Cierre de sesión: He añadido una función logout() que borra la cookie y devuelve al formulario de login.
 
-## Contribuciones
-Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para discutir cualquier cambio importante.
 
-## Licencia
-Este proyecto está licenciado bajo la Licencia MIT.
+
+
+
+
+
+
+
