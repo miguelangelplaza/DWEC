@@ -1,0 +1,150 @@
+/* Estilo futurista del body */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+/* Cabecera futurista con transparencia */
+.header {
+  background: linear-gradient(90deg, rgba(0,212,255,0.2), rgba(9,9,121,0.4));
+  opacity: 0.8;
+  text-align: center;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.75);
+}
+
+/* Barra de navegación superior */
+.topnav {
+  overflow: hidden;
+  background: rgba(9, 9, 121, 0.8);
+  border-bottom: 2px solid #1b1b1b;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #00fff5;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.75);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.topnav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ff007f;
+}
+
+/* Contenedor de tarjetas */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilo futurista de las tarjetas */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+.cardTitle {
+  font-size: 22px;
+  color: #00fff5;
+  text-align: center;
+  padding: 15px 10px 5px;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+.cardBody {
+  padding: 15px;
+  color: #e0e0e0;
+}
+
+.cardFooter {
+  background: rgba(255, 0, 128, 0.2);
+  border-radius: 0 0 20px 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cardFooter a {
+  text-decoration: none;
+  color: #ff007f;
+  text-shadow: 0 0 10px rgba(255, 0, 128, 0.75);
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* Pie de página con efecto futurista */
+.footer {
+  background: linear-gradient(90deg, rgba(0, 212, 255, 0.2), rgba(9, 9, 121, 0.4));
+  opacity: 0.8;
+  text-align: center;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.75);
+}
+
+/* Centrar el formulario de login */
+#loginCard {
+  margin: 0 auto;
+}
+
+/* Mensaje de login */
+#loginMessage {
+  margin-top: 10px;
+  color: #ff007f;
+}
+
+/* Inputs del formulario de login */
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+  color: #e0e0e0;
+}
+
+/* Botón de submit con efecto */
+#loginForm input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff007f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#loginForm input[type="submit"]:hover {
+  background-color: #ff1493;
+  transform: scale(1.05);
+}

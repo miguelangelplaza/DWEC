@@ -76,9 +76,3 @@ async function checkLoginStatus() {
 - **Persistencia de sesión mejorada**: Ahora IndexedDB almacena el estado de inicio de sesión para que se mantenga al navegar o recargar la página.
 - **Función de cierre de sesión añadida**: La función `logout()` borra el estado de la sesión en IndexedDB, permitiendo al usuario cerrar sesión fácilmente desde cualquier página.
 - **Soporte para futuras actualizaciones de base de datos**: La estructura de IndexedDB se maneja con versiones para facilitar actualizaciones sin afectar los datos existentes.
-
-
-
-
-
-

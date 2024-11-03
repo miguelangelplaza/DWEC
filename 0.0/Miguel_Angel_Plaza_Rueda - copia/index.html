@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript</title>
+  <link href="./img/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+  <script defer src="./js/setCookie.js"></script>
+  <script defer src="./js/getCookie.js"></script>
+  <script defer src="./js/loginFunciones.js"></script>
+  <script defer src="./js/login.js"></script>
+</head>
+
+<body>
+  <!-- --------HEADER---------- -->
+  <div class="header">
+    <h3>Ejemplos – FUNDAMENTOS DE JS (ES6)</h3>
+    <h4>Desarrollo WEB en entorno cliente</h4>
+  </div>
+  <!-- ---------MENU----------- -->
+  <div class="topnav">
+    <a href="https://www.w3schools.com/js/default.asp">w3schools</a>
+    <a href="https://es.javascript.info/js">javascript.info</a>
+    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN</a>
+    <a href="https://github.com/miguelangelplaza/DWEC/tree/main">GitHub</a>
+    <a href="#" id="logoutButton" style="display: none;">Cerrar Sesión</a>
+  </div>
+  <br />
+  <!-- ------MAIN-CONTENT------ -->
+  <div class="container">
+
+    <!-- Formulario de Login -->
+    <div class="card" id="loginCard">
+      <div class="cardTitle">Iniciar Sesión</div>
+      <div class="cardBody">
+        <form id="loginForm">
+          <label for="username">Nombre de usuario:</label><br>
+          <input type="text" id="username" name="username" value="MiguelAngel" required><br><br>
+          <label for="password">Contraseña:</label><br>
+          <input type="password" id="password" name="password"  value="123456" required><br><br>
+          <input type="button" id="loginButton" value="Ingresar">
+        </form>
+        <p id="loginMessage"></p>
+      </div>
+    </div>
+  </div>
+  <br />
+  <!-- ---------FOOT----------- -->
+  <div class="footer">
+    © Miguel Angel Plaza Rueda ☺
+  </div>
+</body>
+
+</html>

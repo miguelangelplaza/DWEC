@@ -1,0 +1,119 @@
+/* Estilo futurista para el body */
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabecera futurista */
+.header {
+  background: linear-gradient(90deg, rgba(0, 212, 255, 0.2), rgba(9, 9, 121, 0.4));
+  opacity: 0.85;
+  text-align: center;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.75);
+  font-size: 16px;
+  border-bottom: 2px solid #1b1b1b;
+}
+
+/* Navegación superior */
+.topnav {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #00fff5;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.75);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.topnav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ff007f;
+}
+
+/* Contenedor de tarjetas */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Tarjetas futuristas */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+.cardTitle {
+  font-size: 22px;
+  color: #00fff5;
+  text-align: center;
+  padding: 15px 10px 5px;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+.cardBody {
+  padding: 15px;
+  color: #e0e0e0;
+}
+
+/* Pie de tarjeta */
+.cardFooter {
+  background: rgba(255, 0, 128, 0.2);
+  border-radius: 0 0 20px 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cardFooter a {
+  text-decoration: none;
+  color: #ff007f;
+  text-shadow: 0 0 10px rgba(255, 0, 128, 0.75);
+}
+
+/* Estilo responsivo */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* Pie de página */
+.footer {
+  background: linear-gradient(90deg, rgba(0, 212, 255, 0.2), rgba(9, 9, 121, 0.4));
+  opacity: 0.85;
+  text-align: center;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.75);
+  border-top: 2px solid #1b1b1b;
+}
