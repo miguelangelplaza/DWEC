@@ -1,6 +1,6 @@
-/* Estilo futurista del body */
+/* Estilo general y fondo oscuro futurista */
 body {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(135deg, #1a2a3d, #2b3d4e, #2f4a58);
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #e0e0e0;
@@ -10,25 +10,25 @@ body {
   min-height: 100vh;
 }
 
-/* Cabecera futurista con transparencia */
+/* Cabecera con efecto de neón */
 .header {
   background: linear-gradient(90deg, rgba(0, 212, 255, 0.2), rgba(9, 9, 121, 0.4));
   text-align: center;
   padding: 20px;
   color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 0 15px rgba(0, 255, 255, 0.75);
-  font-size: 1.5em;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.75);
+  font-size: 1.8em;
   font-weight: bold;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Barra de navegación superior */
+/* Estilo del menú de navegación */
 .topnav {
   display: flex;
   justify-content: center;
-  background: rgba(9, 9, 121, 0.9);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
-  padding: 15px 0;
+  background: rgba(9, 9, 121, 0.8);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  padding: 20px 0;
 }
 
 .topnav a {
@@ -56,91 +56,69 @@ body {
   gap: 20px;
 }
 
-/* Estilo futurista de las tarjetas */
+/* Estilo de las tarjetas */
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra el contenido verticalmente */
-  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  max-width: 400px; /* Aumentado para mejor compatibilidad con el formulario */
+  max-width: 400px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(0, 255, 255, 0.5);
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 25px; /* Añadido padding para evitar que el contenido se salga */
+  padding: 25px;
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
 }
 
 .cardTitle {
   font-size: 24px;
   color: #00fff5;
   text-align: center;
-  padding: 15px 0; /* Ajuste del padding */
+  padding: 15px 0;
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
 }
 
-/* Asegura que el cuerpo de la tarjeta tenga un espaciado adecuado */
-.cardBody {
-  width: 100%; /* Asegura que ocupe todo el ancho disponible */
-  padding: 0; /* Eliminar padding para que los inputs no salgan */
+/* Sección CRUD y formularios */
+.crudSection h2, .crudSection h3 {
+  color: #00fff5;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  text-align: center;
+}
+
+.crudSection form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.crudSection form label {
+  display: block;
   color: #e0e0e0;
-}
-
-/* Pie de página con efecto futurista */
-.footer {
-  background: linear-gradient(90deg, rgba(0, 212, 255, 0.2), rgba(9, 9, 121, 0.4));
-  text-align: center;
-  padding: 20px;
-  color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 0 15px rgba(0, 255, 255, 0.75);
-  font-size: 0.9em;
-}
-
-/* Centrar el formulario de login */
-#loginCard {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 400px;
-}
-
-/* Mensaje de login */
-#loginMessage {
-  margin-top: 10px;
-  color: #ff007f;
-  text-align: center;
   font-weight: bold;
 }
 
-/* Inputs del formulario de login */
-#loginForm {
-  display: flex; /* Cambiado a flex para mejor alineación */
-  flex-direction: column; /* Alinea los inputs verticalmente */
-  width: 100%; /* Asegura que ocupe todo el ancho */
-}
-
-#loginForm input[type="text"],
-#loginForm input[type="password"] {
-  width: 100%;
-  padding: 8px; /* Padding ajustado para dar espacio interno */
-  margin: 6px 0;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(0, 0, 0, 0.6);
+.crudSection form input {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.7);
   color: #e0e0e0;
   border-radius: 5px;
   font-size: 16px;
+  width: 100%;
 }
 
-/* Botón de login con efecto */
-#loginForm input[type="button"] {
-  width: 100%;
-  padding: 12px;
-  background-color: #ff007f;
+.crudSection form button {
+  padding: 10px 20px;
+  background-color: #00fff5;
   color: white;
   border: none;
   cursor: pointer;
@@ -148,15 +126,67 @@ body {
   font-weight: bold;
   transition: background-color 0.3s, transform 0.2s;
   border-radius: 5px;
-  margin-top: 10px;
 }
 
-#loginForm input[type="button"]:hover {
-  background-color: #ff1493;
+.crudSection form button:hover {
+  background-color: #00ced1;
   transform: scale(1.05);
 }
 
-/* Estilo responsivo para pantallas pequeñas */
+/* Tablas para mostrar datos */
+.crudSection table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.crudSection table th, .crudSection table td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  text-align: center;
+}
+
+.crudSection table th {
+  background: rgba(0, 255, 255, 0.3);
+  color: #00fff5;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.75);
+  font-weight: bold;
+}
+
+.crudSection table td {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.crudSection table button {
+  padding: 6px 12px;
+  background-color: #ff007f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 5px;
+}
+
+.crudSection table button:hover {
+  background-color: #ff1493;
+  transform: scale(1.1);
+}
+
+/* Pie de página */
+.footer {
+  background: linear-gradient(90deg, rgba(0, 212, 255, 0.2), rgba(9, 9, 121, 0.4));
+  text-align: center;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.75);
+  font-size: 0.9em;
+}
+
+/* Estilo responsivo */
 @media screen and (max-width: 600px) {
   .container {
     padding: 10px;
@@ -168,10 +198,23 @@ body {
   }
 
   .header {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 
   .card {
     max-width: 100%;
+    padding: 20px;
+  }
+
+  .crudSection table {
+    font-size: 12px;
+  }
+
+  .crudSection form {
+    flex-direction: column;
+  }
+
+  .crudSection form input {
+    width: 100%;
   }
 }

@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio de Sesión Futurista</title>
+  <title>CRUD</title>
   <link href="./img/favicon.ico" rel="icon" type="image/x-icon">
   <link href="./css/styles.css" rel="stylesheet" type="text/css">
   <script defer src="./js/indexedDB.js"></script>
   <script defer src="./js/login.js"></script>
   <script defer src="./js/logout.js"></script>
+  <script defer src="./js/crud.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
     <a href="https://github.com/miguelangelplaza/DWEC/tree/main">GitHub</a>
     <a href="#" id="logoutButton" style="display: none;">Cerrar Sesión</a>
   </nav>
-  
+
   <!-- ------MAIN-CONTENT------ -->
   <main class="container">
     <!-- Formulario de Login -->
@@ -44,6 +45,63 @@
         </form>
         <p id="loginMessage"></p>
       </div>
+    </section>
+
+    <!-- CRUD Section -->
+    <section class="crudSection" id="crudSection" style="display: yes;">
+      <h2>CRUD con Persistencia en Cookies, Storage e IndexedDB</h2>
+
+      <!-- Botones de carga de datos desde API -->
+      <button id="load-one">+1 Dato API</button>
+      <button id="load-five">+5 Datos API</button>
+
+      <!-- Formulario para Cookies -->
+      <h3>Formulario para Cookies</h3>
+      <form id="cookieForm">
+        <label for="cookieName">Nombre:</label>
+        <input type="text" id="cookieName" required>
+        <label for="cookieValue">Valor:</label>
+        <input type="text" id="cookieValue" required>
+        <button type="submit">Guardar en Cookies</button>
+      </form>
+
+      <!-- Formulario para LocalStorage e IndexedDB -->
+      <h3>Formulario para LocalStorage e IndexedDB</h3>
+      <form id="storageForm">
+        <label for="storageName">Nombre:</label>
+        <input type="text" id="storageName" required>
+        <label for="storageAge">Edad:</label>
+        <input type="number" id="storageAge" required>
+        <label for="storageProfession">Profesión:</label>
+        <input type="text" id="storageProfession" required>
+        <button type="submit">Guardar en Storage</button>
+      </form>
+
+      <!-- Tablas de visualización de datos -->
+      <h3>Datos en Cookies</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Valor</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="cookiesTable"></tbody>
+      </table>
+
+      <h3>Datos en LocalStorage e IndexedDB</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Profesión</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="storageTable"></tbody>
+      </table>
     </section>
   </main>
   
